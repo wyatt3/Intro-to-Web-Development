@@ -183,3 +183,28 @@ form input[type="submit"] {
     cursor: pointer;
     margin-top: 10px;
 }
+
+.expandable-section {
+    margin: 20px 0;
+}
+
+.expand-btn {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.expand-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.expand-content.active {
+    display: block;
+}

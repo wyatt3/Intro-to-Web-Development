@@ -4,3 +4,9 @@ setInterval(() => {
     document.getElementById('header-img').src = images[currentImage];
     currentImage = (currentImage + 1) % images.length;
 }, 5000);
+
+document.querySelectorAll('.expand-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.nextElementSibling.classList.toggle('active');
+    });
+});
