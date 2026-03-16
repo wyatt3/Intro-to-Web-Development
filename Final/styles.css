@@ -208,3 +208,33 @@ form input[type="submit"] {
 .expand-content.active {
     display: block;
 }
+
+#nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #nav-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    #nav-menu.active {
+        display: block;
+    }
+
+    #nav-menu li {
+        display: block;
+        text-align: center;
+    }
+}
