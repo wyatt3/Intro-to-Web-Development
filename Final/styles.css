@@ -27,9 +27,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ccc;
     text-align: center;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
 }
 
 .header {
@@ -72,7 +76,7 @@ main {
     margin: auto;
 }
 
-main p {
+.homepage-text {
     padding: 10px;
     margin: 10px 25px;
     font-size: 24px;
@@ -85,16 +89,26 @@ main p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.resources div {
+.resource-card {
     padding: 5px 20px;
     margin: 10px 25px;
     font-size: 19px;
     line-height: 25px;
     border: 1px solid black;
     border-radius: 15px;
-    width: 33%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 600px;
+}
+
+.resource-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
 }
 
 footer {
@@ -103,4 +117,69 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+.page-title {
+    margin-top: 0;
+    padding-top: 90px;
+}
+
+.book-suggestion-title {
+    margin: 0;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 20px;
+}
+
+.book img {
+    height: 200px;
+    margin-right: 20px;
+}
+
+.book h3 {
+    margin: 0;
+}
+
+.author {
+    font-style: italic;
+    color: #555;
+    margin: 0 15px;
+}
+
+.book-description {
+    margin: 10px;
+}
+
+form * {
+    display: block;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
 }
