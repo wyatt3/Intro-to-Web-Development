@@ -175,6 +175,7 @@ footer {
 
 .expand-content {
     display: none;
+    margin: 0;
     padding: 15px;
     border: 1px solid #ccc;
     border-top: none;
