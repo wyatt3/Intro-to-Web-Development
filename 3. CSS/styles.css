@@ -84,78 +84,9 @@ footer {
 .book {
     display: flex;
     align-items: center;
-    margin: 20px 0;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 20px;
-}
-
-.book img {
-    height: 200px;
-    margin-right: 20px;
-}
-
-.book h3 {
-    margin: 0;
 }
 
 .author {
     font-style: italic;
     color: #555555;
-    margin: 3px 15px;
-}
-
-.expandable-section {
-    margin: 20px 0;
-}
-
-.expand-btn {
-    width: 100%;
-    padding: 15px;
-    text-align: left;
-    background-color: #f4f4f4;
-    border: 1px solid #cccccc;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.expand-content {
-    display: none;
-    margin: 0;
-    padding: 15px;
-    border: 1px solid #cccccc;
-    border-top: none;
-}
-
-.expand-content.active {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    #nav-toggle {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
-        width: 100%;
-    }
-
-    #nav-menu.active {
-        display: block;
-    }
-
-    #nav-menu li {
-        display: block;
-        text-align: center;
-    }
 }
